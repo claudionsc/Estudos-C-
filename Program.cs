@@ -5,4 +5,9 @@
 using  Estudos_C_.Models;
 
 // criar uma nova instância da classe pessoa
-Pessoa p = new Pessoa();
+Pessoa pessoa1 = new Pessoa(); //essa é uma variável
+
+pessoa1.Nome = "Gabriel";
+pessoa1.Idade = 26;
+pessoa1.Apresentar();
+
