@@ -1,7 +1,10 @@
+<!-- guarda metadados em XML -->
+  <!-- OutputType é tipo de saída ao compilar arquivo, nesse caso é executável, 
+  mas pode ser arquivos de bibliotecas -->
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Exe</OutputType> 
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Estudos_C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
