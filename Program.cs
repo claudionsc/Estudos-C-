@@ -11,3 +11,14 @@ pessoa1.Nome = "Gabriel";
 pessoa1.Idade = 26;
 pessoa1.Apresentar();
 
+// usando o DateTime para pegar a data e hora atual do pc
+DateTime dataAtual = DateTime.Now;
+Console.WriteLine(dataAtual);
+
+DateTime dataAtual2 = DateTime.Now.AddDays(5);
+Console.WriteLine(dataAtual2);
+
+DateTime dataAtual3 = DateTime.Now;
+Console.WriteLine(dataAtual3.ToString("dd/mm/yy"));
+
+
