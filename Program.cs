@@ -21,4 +21,14 @@ Console.WriteLine(dataAtual2);
 DateTime dataAtual3 = DateTime.Now;
 Console.WriteLine(dataAtual3.ToString("dd/mm/yy"));
 
+// Converter string em inteiro
+
+int a = Convert.ToInt32("5"); // valores nulos retornam 0
+int b = int.Parse("15"); // valores nulos dão erro na execução
+
+Console.WriteLine(a);
+Console.WriteLine(b);
+
+
+
 
