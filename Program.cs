@@ -2,7 +2,7 @@
 // uma classe é onde será codificado, ou seja, o arquivo com os códigos
 
 // importar o namespace onde está a classe pessoa
-using  Estudos_C_.Models;
+// using  Estudos_C_.Models;
 
 // criar uma nova instância da classe pessoa
 // Pessoa pessoa1 = new Pessoa(); //essa é uma variável
@@ -34,13 +34,30 @@ using  Estudos_C_.Models;
 // Console.WriteLine(a);
 
 
-// TryParse para mostrar um log caso dê erro na conversão de tipos
-string a = "15-"; 
+// // TryParse para mostrar um log caso dê erro na conversão de tipos
+// string a = "15-"; 
 
-int b = 0;
+// int b = 0;
 
-int.TryParse(a, out b); // valor a parsear e qual o resultado de saída caso de erro
+// int.TryParse(a, out b); // valor a parsear e qual o resultado de saída caso de erro
 
-Console.WriteLine(b);
+// Console.WriteLine(b);
+
+int qtdEstoque = 10;
+
+int qdtCompra = 12;
+
+
+if(qtdEstoque >= qdtCompra)
+{
+    Console.WriteLine("Venda realizada");
+}
+else
+{
+    Console.WriteLine("Não tem no estoque");
+}
+
+
+
 
 
