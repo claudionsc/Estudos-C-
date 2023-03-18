@@ -29,11 +29,18 @@ using  Estudos_C_.Models;
 // Console.WriteLine(a);
 // Console.WriteLine(b);
 
-int inteiro = 5;
-string a  = inteiro.ToString();
-Console.WriteLine(a);
+// int inteiro = 5;
+// string a  = inteiro.ToString();
+// Console.WriteLine(a);
 
 
+// TryParse para mostrar um log caso dê erro na conversão de tipos
+string a = "15-"; 
 
+int b = 0;
+
+int.TryParse(a, out b); // valor a parsear e qual o resultado de saída caso de erro
+
+Console.WriteLine(b);
 
 
