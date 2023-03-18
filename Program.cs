@@ -2,7 +2,7 @@
 // uma classe é onde será codificado, ou seja, o arquivo com os códigos
 
 // importar o namespace onde está a classe pessoa
-// using  Estudos_C_.Models;
+using  Estudos_C_.Models;
 
 // criar uma nova instância da classe pessoa
 // Pessoa pessoa1 = new Pessoa(); //essa é uma variável
@@ -43,21 +43,43 @@
 
 // Console.WriteLine(b);
 
-int qtdEstoque = 10;
+// int qtdEstoque = 10;
 
-int qdtCompra = 0;
+// int qdtCompra = 0;
 
-if(qdtCompra == 0){
-    Console.WriteLine("Venda não realizada");
-}
-else if(qtdEstoque >= qdtCompra)
+// if(qdtCompra == 0){
+//     Console.WriteLine("Venda não realizada");
+// }
+// else if(qtdEstoque >= qdtCompra)
+// {
+//     Console.WriteLine("Venda realizada");
+// }
+// else
+// {
+//     Console.WriteLine("Não tem no estoque");
+// }
+
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch(letra)
 {
-    Console.WriteLine("Venda realizada");
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+
+    default:
+    Console.WriteLine("Não é uma vogal");
+    break;
 }
-else
-{
-    Console.WriteLine("Não tem no estoque");
-}
+
+
+
+
 
 
 
