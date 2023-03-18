@@ -45,10 +45,12 @@
 
 int qtdEstoque = 10;
 
-int qdtCompra = 12;
+int qdtCompra = 0;
 
-
-if(qtdEstoque >= qdtCompra)
+if(qdtCompra == 0){
+    Console.WriteLine("Venda não realizada");
+}
+else if(qtdEstoque >= qdtCompra)
 {
     Console.WriteLine("Venda realizada");
 }
