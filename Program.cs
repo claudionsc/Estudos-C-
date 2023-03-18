@@ -5,29 +5,34 @@
 using  Estudos_C_.Models;
 
 // criar uma nova instância da classe pessoa
-Pessoa pessoa1 = new Pessoa(); //essa é uma variável
+// Pessoa pessoa1 = new Pessoa(); //essa é uma variável
 
-pessoa1.Nome = "Gabriel";
-pessoa1.Idade = 26;
-pessoa1.Apresentar();
+// pessoa1.Nome = "Gabriel";
+// pessoa1.Idade = 26;
+// pessoa1.Apresentar();
 
-// usando o DateTime para pegar a data e hora atual do pc
-DateTime dataAtual = DateTime.Now;
-Console.WriteLine(dataAtual);
+// // usando o DateTime para pegar a data e hora atual do pc
+// DateTime dataAtual = DateTime.Now;
+// Console.WriteLine(dataAtual);
 
-DateTime dataAtual2 = DateTime.Now.AddDays(5);
-Console.WriteLine(dataAtual2);
+// DateTime dataAtual2 = DateTime.Now.AddDays(5);
+// Console.WriteLine(dataAtual2);
 
-DateTime dataAtual3 = DateTime.Now;
-Console.WriteLine(dataAtual3.ToString("dd/mm/yy"));
+// DateTime dataAtual3 = DateTime.Now;
+// Console.WriteLine(dataAtual3.ToString("dd/mm/yy"));
 
-// Converter string em inteiro
+// // Converter string em inteiro
 
-int a = Convert.ToInt32("5"); // valores nulos retornam 0
-int b = int.Parse("15"); // valores nulos dão erro na execução
+// int a = Convert.ToInt32("5"); // valores nulos retornam 0
+// int b = int.Parse("15"); // valores nulos dão erro na execução
 
+// Console.WriteLine(a);
+// Console.WriteLine(b);
+
+int inteiro = 5;
+string a  = inteiro.ToString();
 Console.WriteLine(a);
-Console.WriteLine(b);
+
 
 
 
