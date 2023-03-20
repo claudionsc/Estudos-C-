@@ -86,9 +86,23 @@ Calculadora calc = new Calculadora();
 // calc.Potencia(3, 3);
 
 // FUNÇÕES TRIGONOMÉTRICAS
-calc.Seno(30);
-calc.Cosseno(30);
-calc.Tangente(30);
+// calc.Seno(30);
+// calc.Cosseno(30);
+// calc.Tangente(30);
+
+int numero = 10;
+
+Console.WriteLine($"Incrementando o {numero}");
+
+numero++;
+
+Console.WriteLine(numero);
+
+Console.WriteLine($"Decrementando o {numero}");
+
+numero--;
+
+Console.WriteLine(numero);
 
 
 
