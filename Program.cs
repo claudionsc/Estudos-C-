@@ -79,10 +79,11 @@ using  Estudos_C_.Models;
 
 
 Calculadora calc = new Calculadora();
-calc.Somar(10, 30);
-calc.Subtrair(30, 10);
-calc.Multiplicar(10, 30);
-calc.Dividir(30, 10);
+// calc.Somar(10, 30);
+// calc.Subtrair(30, 10);
+// calc.Multiplicar(10, 30);
+// calc.Dividir(30, 10);
+calc.Potencia(3, 3);
 
 
 

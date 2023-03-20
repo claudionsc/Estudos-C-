@@ -23,5 +23,10 @@ namespace Estudos_C_.Models
         {
             Console.WriteLine($"{x} / {y} = {x / y}");
         }
+        public void Potencia(int x, int y)
+        {
+            double potencia = Math.Pow(x, y); //classe Math contém métodos avançados de matemática, Pow é potencia em ingles
+            Console.WriteLine($"{x}^{y} = {potencia}");
+        }
     }
 }
