@@ -107,7 +107,19 @@ Calculadora calc = new Calculadora();
 // Console.WriteLine(numero);
 
 // RAIZ QUADRADA ========================================================
-calc.RaizQuadrada(144);
+// calc.RaizQuadrada(144);
+
+// ESTRUTURAS DE REPETIÇÃO ==============================================
+
+int numero = 5;
+
+// FOR ====
+
+for(int contador = 0; contador <= 10; contador++)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+}
+
 
 
 
