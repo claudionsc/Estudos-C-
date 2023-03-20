@@ -150,15 +150,15 @@ Calculadora calc = new Calculadora();
 // MENU INTERATIVO =============================
 
 string opcao;
+bool exibirMenu = true;
 
-while(true)
+while(exibirMenu)
 {
     Console.WriteLine("Digite a sua opção: ");
     Console.WriteLine("1 - Cadastrar cliente");
     Console.WriteLine("2 - Buscar cliente");
     Console.WriteLine("3 - Apagar cliente");
     Console.WriteLine("4 - Encerrar");
-
 
     opcao = Console.ReadLine();
 
@@ -178,7 +178,7 @@ while(true)
 
         case "4":
          Console.WriteLine("Encerrar");
-         Environment.Exit(0); //encerrar o switch
+         exibirMenu = false;
          break;
 
          default:
@@ -186,6 +186,8 @@ while(true)
          break;
     }
 }
+
+Console.WriteLine("Programa encerrado");
 
 
 
