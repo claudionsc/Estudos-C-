@@ -85,6 +85,7 @@ Calculadora calc = new Calculadora();
 // // calc.Dividir(30, 10);
 // calc.Potencia(3, 3);
 
+// FUNÇÕES TRIGONOMÉTRICAS
 calc.Seno(30);
 calc.Cosseno(30);
 calc.Tangente(30);
