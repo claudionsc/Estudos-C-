@@ -135,19 +135,57 @@ Calculadora calc = new Calculadora();
 // DO WHILE - A VERIFICAÇÃO É EXECUTADA AO FINAL DO CÓDIGO ============
 
 
-int soma = 0, numero = 0;
-do
+// int soma = 0, numero = 0;
+// do
+// {
+//     Console.WriteLine($"Digite um número (0 para parar)");
+//     numero = Convert.ToInt32(Console.ReadLine());
+
+//     soma += numero;
+
+// } while(numero != 0);
+
+// Console.WriteLine($"Total das somas dos números digitados é: {soma}");
+
+// MENU INTERATIVO =============================
+
+string opcao;
+
+while(true)
 {
-    Console.WriteLine($"Digite um número (0 para parar)");
-    numero = Convert.ToInt32(Console.ReadLine());
-
-    soma += numero;
-
-} while(numero != 0);
-
-Console.WriteLine($"Total das somas dos números digitados é: {soma}");
+    Console.WriteLine("Digite a sua opção: ");
+    Console.WriteLine("1 - Cadastrar cliente");
+    Console.WriteLine("2 - Buscar cliente");
+    Console.WriteLine("3 - Apagar cliente");
+    Console.WriteLine("4 - Encerrar");
 
 
+    opcao = Console.ReadLine();
+
+    switch(opcao)
+    {
+        case "1":
+         Console.WriteLine("Cadastro do cliente");
+         break;
+
+        case "2":
+         Console.WriteLine(" Buscar cliente");
+         break;
+         
+        case "3":
+         Console.WriteLine("Apagar cliente");
+         break;
+
+        case "4":
+         Console.WriteLine("Encerrar");
+         Environment.Exit(0); //encerrar o switch
+         break;
+
+         default:
+         Console.WriteLine("Opção inválida");
+         break;
+    }
+}
 
 
 
