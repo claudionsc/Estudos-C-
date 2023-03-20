@@ -85,24 +85,30 @@ Calculadora calc = new Calculadora();
 // // calc.Dividir(30, 10);
 // calc.Potencia(3, 3);
 
-// FUNÇÕES TRIGONOMÉTRICAS
+// FUNÇÕES TRIGONOMÉTRICAS =================================================
 // calc.Seno(30);
 // calc.Cosseno(30);
 // calc.Tangente(30);
 
-int numero = 10;
+// INCREMENTO E DECREMENTO =======================================
 
-Console.WriteLine($"Incrementando o {numero}");
+// int numero = 10;
 
-numero++;
+// Console.WriteLine($"Incrementando o {numero}");
 
-Console.WriteLine(numero);
+// numero++;
 
-Console.WriteLine($"Decrementando o {numero}");
+// Console.WriteLine(numero);
 
-numero--;
+// Console.WriteLine($"Decrementando o {numero}");
 
-Console.WriteLine(numero);
+// numero--;
+
+// Console.WriteLine(numero);
+
+// RAIZ QUADRADA ========================================================
+calc.RaizQuadrada(144);
+
 
 
 
