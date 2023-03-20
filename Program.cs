@@ -115,11 +115,20 @@ int numero = 5;
 
 // FOR ====
 
-for(int contador = 0; contador <= 10; contador++)
+// for(int contador = 0; contador <= 10; contador++)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+// }
+
+// WHILE ============
+
+int contador = 0;
+
+while(contador <= 10)
 {
     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+    contador++;
 }
-
 
 
 
