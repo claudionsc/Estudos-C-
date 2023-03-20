@@ -59,24 +59,30 @@ using  Estudos_C_.Models;
 //     Console.WriteLine("Não tem no estoque");
 // }
 
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
 
-switch(letra)
-{
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal");
-        break;
+// switch(letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal");
+//         break;
 
-    default:
-    Console.WriteLine("Não é uma vogal");
-    break;
-}
+//     default:
+//     Console.WriteLine("Não é uma vogal");
+//     break;
+// }
 
+
+Calculadora calc = new Calculadora();
+calc.Somar(10, 30);
+calc.Subtrair(30, 10);
+calc.Multiplicar(10, 30);
+calc.Dividir(30, 10);
 
 
 
