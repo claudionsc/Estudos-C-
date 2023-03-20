@@ -111,7 +111,7 @@ Calculadora calc = new Calculadora();
 
 // ESTRUTURAS DE REPETIÇÃO ==============================================
 
-int numero = 5;
+// int numero = 5;
 
 // FOR ====
 
@@ -122,13 +122,30 @@ int numero = 5;
 
 // WHILE ============
 
-int contador = 0;
+// int contador = 0;
 
-while(contador <= 10)
+// while(contador <= 10)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+//     contador++;
+
+//     // obs, pode quebrar o laço apenas usando o break com uma condicional
+// }
+
+// DO WHILE - A VERIFICAÇÃO É EXECUTADA AO FINAL DO CÓDIGO ============
+
+
+int soma = 0, numero = 0;
+do
 {
-    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
-    contador++;
-}
+    Console.WriteLine($"Digite um número (0 para parar)");
+    numero = Convert.ToInt32(Console.ReadLine());
+
+    soma += numero;
+
+} while(numero != 0);
+
+Console.WriteLine($"Total das somas dos números digitados é: {soma}");
 
 
 
