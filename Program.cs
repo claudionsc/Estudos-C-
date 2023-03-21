@@ -220,8 +220,38 @@ arrayInteiros[2] = 50;
 
 // COPIANDO ARRAYS ========================================
 
-int[] arrayDobrado = new int[arrayInteiros.Length * 2];
-Array.Copy(arrayInteiros, arrayDobrado, arrayInteiros.Length);
+// int[] arrayDobrado = new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayDobrado, arrayInteiros.Length);
+
+
+
+
+// LISTAS EM C# ==============================================
+// Uma lista é mais facil de iterar que o array e funciona como uma extensão do array
+
+List<string> listaString = new List<string>(); // não precisa determinar uma
+//capacidade máxima
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+for(int i = 0; i < listaString.Count; i++) // count é tipo o length do array
+{
+    Console.WriteLine($"Posição nº {i} - {listaString[i]}");
+}
+
+// OBS: É MAIS INDICADO PERCORRER UMA LISTA COM O FOREACH
+
+int contadorForeach = 0;
+    Console.WriteLine("FOREACH ===========================================");
+foreach(string item in listaString)
+{
+    Console.WriteLine($"Posição nº {contadorForeach} - {listaString[contadorForeach]}");
+    contadorForeach++;
+}
+
+
 
 
 
