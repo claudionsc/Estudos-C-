@@ -197,10 +197,24 @@ arrayInteiros[0] = 72;
 arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 
+
+Console.WriteLine("PERCORRENDO O ARRAY COM FOR ================");
+
 for(int i = 0; i < arrayInteiros.Length; i++)
 {
-    Console.WriteLine(i);
+    Console.WriteLine(arrayInteiros[i]);
 }
+
+// Obs: forEach é para percorrer uma lista sem depender de um contador
+Console.WriteLine("PERCORRENDO O ARRAY COM FOREACH ================");
+
+
+foreach(int valor in arrayInteiros)
+{
+    Console.WriteLine(valor);
+}
+
+
 
 
 
