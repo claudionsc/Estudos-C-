@@ -198,21 +198,25 @@ arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 
 
-Console.WriteLine("PERCORRENDO O ARRAY COM FOR ================");
+// Console.WriteLine("PERCORRENDO O ARRAY COM FOR ================");
 
-for(int i = 0; i < arrayInteiros.Length; i++)
-{
-    Console.WriteLine(arrayInteiros[i]);
-}
+// for(int i = 0; i < arrayInteiros.Length; i++)
+// {
+//     Console.WriteLine(arrayInteiros[i]);
+// }
 
-// Obs: forEach é para percorrer uma lista sem depender de um contador
-Console.WriteLine("PERCORRENDO O ARRAY COM FOREACH ================");
+// // Obs: forEach é para percorrer uma lista sem depender de um contador
+// Console.WriteLine("PERCORRENDO O ARRAY COM FOREACH ================");
 
 
-foreach(int valor in arrayInteiros)
-{
-    Console.WriteLine(valor);
-}
+// foreach(int valor in arrayInteiros)
+// {
+//     Console.WriteLine(valor);
+// }
+
+// MUDANDO O TAMANHO DO ARRAY ===========================
+//  o resize cria um novo array com a capacidade que foi passada
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
 
 
 
