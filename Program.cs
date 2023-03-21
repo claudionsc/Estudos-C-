@@ -149,45 +149,58 @@ Calculadora calc = new Calculadora();
 
 // MENU INTERATIVO =============================
 
-string opcao;
-bool exibirMenu = true;
+// string opcao;
+// bool exibirMenu = true;
 
-while(exibirMenu)
-{
-    Console.WriteLine("Digite a sua opção: ");
-    Console.WriteLine("1 - Cadastrar cliente");
-    Console.WriteLine("2 - Buscar cliente");
-    Console.WriteLine("3 - Apagar cliente");
-    Console.WriteLine("4 - Encerrar");
+// while(exibirMenu)
+// {
+//     Console.WriteLine("Digite a sua opção: ");
+//     Console.WriteLine("1 - Cadastrar cliente");
+//     Console.WriteLine("2 - Buscar cliente");
+//     Console.WriteLine("3 - Apagar cliente");
+//     Console.WriteLine("4 - Encerrar");
 
-    opcao = Console.ReadLine();
+//     opcao = Console.ReadLine();
 
-    switch(opcao)
-    {
-        case "1":
-         Console.WriteLine("Cadastro do cliente");
-         break;
+//     switch(opcao)
+//     {
+//         case "1":
+//          Console.WriteLine("Cadastro do cliente");
+//          break;
 
-        case "2":
-         Console.WriteLine(" Buscar cliente");
-         break;
+//         case "2":
+//          Console.WriteLine(" Buscar cliente");
+//          break;
          
-        case "3":
-         Console.WriteLine("Apagar cliente");
-         break;
+//         case "3":
+//          Console.WriteLine("Apagar cliente");
+//          break;
 
-        case "4":
-         Console.WriteLine("Encerrar");
-         exibirMenu = false;
-         break;
+//         case "4":
+//          Console.WriteLine("Encerrar");
+//          exibirMenu = false;
+//          break;
 
-         default:
-         Console.WriteLine("Opção inválida");
-         break;
-    }
+//          default:
+//          Console.WriteLine("Opção inválida");
+//          break;
+//     }
+// }
+
+// Console.WriteLine("Programa encerrado");
+
+// ARRAY ===================================
+
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+
+for(int i = 0; i < arrayInteiros.Length; i++)
+{
+    Console.WriteLine(i);
 }
-
-Console.WriteLine("Programa encerrado");
 
 
 
