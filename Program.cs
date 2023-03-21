@@ -216,7 +216,12 @@ arrayInteiros[2] = 50;
 
 // MUDANDO O TAMANHO DO ARRAY ===========================
 //  o resize cria um novo array com a capacidade que foi passada
-Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+// COPIANDO ARRAYS ========================================
+
+int[] arrayDobrado = new int[arrayInteiros.Length * 2];
+Array.Copy(arrayInteiros, arrayDobrado, arrayInteiros.Length);
 
 
 
