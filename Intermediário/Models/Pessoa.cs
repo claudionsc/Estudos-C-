@@ -11,6 +11,15 @@ namespace Intermediário.Models
 {
     public class Pessoa
     {
+        // CRIANDO UM CONSTRUTOR PARA A CLASSE (mesmo nome da classe)
+        public Pessoa()
+        {
+
+        }
+        public Pessoa(string nome, string sobrenome)
+        {
+            
+        }
         private string _nome; // isso é um campo, criado para encapsulamento (proteção, validação de métodos)
         private int _idade;
 

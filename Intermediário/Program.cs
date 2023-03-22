@@ -1,14 +1,8 @@
 ﻿using Intermediário.Models;
 
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Claudio";
-pessoa1.Sobrenome = "Nascimento";
+Pessoa pessoa1 = new Pessoa("Claudio", "Nascimento");
 
-
-Pessoa pessoa2 = new Pessoa();
-pessoa2.Nome = "Gabriel";
-pessoa2.Sobrenome = "Alvi";
-
+Pessoa pessoa2 = new Pessoa("Gabrie", "Alvi");
 
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Inglês";
