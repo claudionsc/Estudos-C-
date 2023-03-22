@@ -8,7 +8,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Estudos_C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
 </Project>
