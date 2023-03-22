@@ -8,7 +8,7 @@ namespace Intermediário.Models
     public class Pessoa
     {
         private string _nome; // campo criado para encapsulamento (proteção, validação de métodos)
-
+        private int _idade;
 
         public string Nome 
         { 
@@ -25,8 +25,15 @@ namespace Intermediário.Models
         } //essas são propriedades
         public int Idade 
         { 
-            get; 
-            set;
+            get => _idade;
+            set
+            {
+                if(value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser menor que zero");
+                }
+                _idade = value;
+            }
         }
 
         public void Apresentar()
