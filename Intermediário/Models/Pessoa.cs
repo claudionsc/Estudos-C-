@@ -12,10 +12,8 @@ namespace Intermediário.Models
 
         public string Nome 
         { 
-            get 
-            {
-                return _nome.ToUpper();
-            } 
+            get => _nome.ToUpper();
+            
             set // ao atribuir um valor, passe a condicional...
             {
                if(value == "") 
