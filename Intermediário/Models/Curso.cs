@@ -20,5 +20,10 @@ namespace Intermediário.Models
             int qtd = Alunos.Count;
             return qtd;
         }
+
+        public bool RemoverAluno(Pessoa aluno)
+        {
+            return Alunos.Remove(aluno);
+        }
     }
 }
