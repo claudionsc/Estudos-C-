@@ -14,5 +14,11 @@ namespace Intermediário.Models
         {
             Alunos.Add(aluno);
         }
+
+        public int ObterQtdAlunosMatriculados()
+        {
+            int qtd = Alunos.Count;
+            return qtd;
+        }
     }
 }
