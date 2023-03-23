@@ -1,5 +1,12 @@
 ﻿using Intermediário.Models;
 
+// ALTERANDO A LOCALIZAÇÃO DO CÓDIGO ====================================
+using System.Globalization;
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+// ====================================================================== 
+
+
+
 // Pessoa pessoa1 = new Pessoa(nome: "Claudio", sobrenome: "Nascimento");
 
 // Pessoa pessoa2 = new Pessoa(nome: "Gabrie", sobrenome: "Alvi");
