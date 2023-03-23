@@ -30,4 +30,10 @@ Console.WriteLine($"{valorMonetario:C}");
 // alterando localização da cultura mesmo ela ja sendo definida como outra
 Console.WriteLine(valorDolar.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
+// REPRESENTANDO PORCENTAGEM ========================================
+double porcentagem = .3421;
+Console.WriteLine(porcentagem.ToString("P"));
 
+// FORMATAÇÃO PERSONALIZADA =========================
+int num = 123456;
+Console.WriteLine(num.ToString("##-##-##"));
