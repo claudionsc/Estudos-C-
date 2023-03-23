@@ -41,6 +41,17 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // FORMATANDO O TIPO DATETIME =========================================
 DateTime data = DateTime.Now; // data atual do dispositivo
+DateTime data2 = DateTime.Parse("11/05/2023 18:00"); // parseando string pra data
+
+// parseando data que pode ser inválida para o tipo datetime
+string dataString ="11/05/2023 18:00";
+DateTime.TryParseExact(dataString, 
+                        "yyy/MM/dd HH:mm", 
+                        CultureInfo.InvariantCulture, 
+                        DateTimeStyles.None, 
+                        out data); 
 
 Console.WriteLine(data);
+Console.WriteLine(data.ToShortDateString()); // somente data
+Console.WriteLine(data.ToShortTimeString()); // somente hora
 Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
