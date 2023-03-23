@@ -21,19 +21,26 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // FORMATANDO VALORES MONETÁRIOS =================================
 
-decimal valorMonetario = 1582.40M;
-decimal valorDolar = 2585.50M;
+// decimal valorMonetario = 1582.40M;
+// decimal valorDolar = 2585.50M;
 
 
-// : significa que é desejado formatar uma string . C significa Currency
-Console.WriteLine($"{valorMonetario:C}");
-// alterando localização da cultura mesmo ela ja sendo definida como outra
-Console.WriteLine(valorDolar.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+// // : significa que é desejado formatar uma string . C significa Currency
+// Console.WriteLine($"{valorMonetario:C}");
+// // alterando localização da cultura mesmo ela ja sendo definida como outra
+// Console.WriteLine(valorDolar.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
-// REPRESENTANDO PORCENTAGEM ========================================
-double porcentagem = .3421;
-Console.WriteLine(porcentagem.ToString("P"));
+// // REPRESENTANDO PORCENTAGEM ========================================
+// double porcentagem = .3421;
+// Console.WriteLine(porcentagem.ToString("P"));
 
-// FORMATAÇÃO PERSONALIZADA =========================
-int num = 123456;
-Console.WriteLine(num.ToString("##-##-##"));
+// // FORMATAÇÃO PERSONALIZADA =========================
+// int num = 123456;
+// Console.WriteLine(num.ToString("##-##-##"));
+
+
+// FORMATANDO O TIPO DATETIME =========================================
+DateTime data = DateTime.Now; // data atual do dispositivo
+
+Console.WriteLine(data);
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
