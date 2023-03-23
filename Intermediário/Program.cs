@@ -22,9 +22,12 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // FORMATANDO VALORES MONETÁRIOS =================================
 
 decimal valorMonetario = 1582.40M;
+decimal valorDolar = 2585.50M;
 
 
 // : significa que é desejado formatar uma string . C significa Currency
 Console.WriteLine($"{valorMonetario:C}");
+// alterando localização da cultura mesmo ela ja sendo definida como outra
+Console.WriteLine(valorDolar.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
 
