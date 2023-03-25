@@ -44,14 +44,21 @@ DateTime data = DateTime.Now; // data atual do dispositivo
 DateTime data2 = DateTime.Parse("11/05/2023 18:00"); // parseando string pra data
 
 // parseando data que pode ser inválida para o tipo datetime
-string dataString ="11/05/2023 18:00";
-DateTime.TryParseExact(dataString, 
-                        "yyy/MM/dd HH:mm", 
+string dataString ="11/06/2023 18:00";
+bool sucesso = DateTime.TryParseExact(dataString, 
+                        "dd/MM/yyyy HH:mm", 
                         CultureInfo.InvariantCulture, 
                         DateTimeStyles.None, 
                         out data); 
 
-Console.WriteLine(data);
-Console.WriteLine(data.ToShortDateString()); // somente data
-Console.WriteLine(data.ToShortTimeString()); // somente hora
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+if (sucesso){
+    Console.WriteLine($"Conversão com sucesso: {data}");
+} else {
+    Console.WriteLine($"{data} é data inválida");
+}                 
+// ==========================================================
+
+// Console.WriteLine(data);
+// Console.WriteLine(data.ToShortDateString()); // somente data
+// Console.WriteLine(data.ToShortTimeString()); // somente hora
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
