@@ -10,7 +10,11 @@ try
         Console.WriteLine(linha);
     }
 
-} catch(Exception ex)
+} catch(FileNotFoundException ex)
+{
+        Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado\n {ex.Message}");   
+}
+catch(Exception ex)
 {
         Console.WriteLine($"Ocorreu uma exceção genérica\n {ex.Message}");   
-}
+} 
