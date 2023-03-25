@@ -13,8 +13,11 @@ try
 } catch(FileNotFoundException ex)
 {
         Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado\n {ex.Message}");   
-}
-catch(Exception ex)
+} catch(Exception ex)
 {
         Console.WriteLine($"Ocorreu uma exceção genérica\n {ex.Message}");   
-} 
+} finally //executa um bloco de código independente se ocorreu erro ou não
+{
+        Console.WriteLine("Chegou até aqui");   
+    
+}
