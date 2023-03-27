@@ -22,4 +22,29 @@
     
 // }
 
-new Ex().Metodo1(); 
+// new Ex().Metodo1(); 
+
+// FILAS =======================================================
+
+Queue<int> fila = new Queue<int>();
+
+// ADD NA FILA
+
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+// REMOVER DA FILA -  REMOVE SEMPRE O PRIMEIRO ELEMENTO DA FILA
+
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
